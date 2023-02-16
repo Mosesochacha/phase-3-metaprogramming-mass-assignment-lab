@@ -8,11 +8,8 @@ class Person
   end
 end
 
+# or
 
-
-      # or 
-
-      
 class Person
   attr_accessor :name,
                 :birthday,
@@ -28,9 +25,7 @@ class Person
                 :pant_length,
                 :pant_width
 
-    def initialize(attributes)
-      attributes.each do |key , value|
-        self.send("#{key}=", value)
-        end
-      end
+  def initialize(attributes)
+    attributes.each { |key, value| self.send("#{key}=", value) }
+  end
 end
