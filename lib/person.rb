@@ -10,7 +10,7 @@
 
 
 
-      or 
+      # or 
 class Person
   attr_accessor :name,
                 :birthday,
